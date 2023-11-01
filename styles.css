@@ -1,0 +1,56 @@
+/* by : Arvinder Singh Ghumman */
+*{ 
+  margin: 0;
+  padding: 0;
+}
+/* Declaring variables */
+:root{
+  --pad: 10px;
+  --border: 8px;
+  --width: calc(min((calc(100vw)), (calc( 100vh - 81px)))) / 7;
+}
+/* setting default values for all divs */
+div{
+  pad: 10px;
+  color: blue;
+  box-sizing: border-box;
+}
+/* your name box */
+#TopDiv1 p{
+  color: aqua;
+}
+#TopDiv1{
+  height: 81px;
+  width: min(100vw, calc(100vh - 81px));
+  padding: 0 3px;
+  background: green;
+  box-sizing: border-box;
+}
+/* The three boxes */
+#TopDiv2{
+  background: red;
+  padding: var(--pad);
+  width: calc(var(--width));
+  height: calc(var(--width));
+  border: calc(var(--border)) solid black;
+  box-sizing: border-box;
+}
+#MidDiv1{
+  background: green;
+  box-sizing: border-box;
+  padding:calc(var(--pad) * 2);
+  width: calc((var(--width)) * 2);
+  height: calc((var(--width)) * 2);
+  margin-left: calc(var(--width));
+  border: calc(var(--border) * 2) solid pink;
+} 
+#BottomDiv1{
+  color: green;
+  background: blue;
+  box-sizing: border-box;
+  padding:calc(var(--pad) * 4);
+  width: calc((var(--width)) * 4);
+  height: calc((var(--width)) * 4);
+  margin-left: calc(var(--width)  * 3);
+  border: calc(var(--border) * 4) solid magenta;
+}
